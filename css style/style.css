@@ -34,6 +34,10 @@ header {
     margin: 15px 0px 15px 0px;
     
 }
+.name h1 {
+    color:#de6449;
+    text-shadow: 5px 5px 5px #2c4251;
+}
 .profile {
     width: 95px;
     height: 125px;
@@ -65,7 +69,8 @@ ul a {
     text-decoration: none;
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
-    color: #DE6449;
+    color: #e5e6e4;
+    text-shadow: 5px 5px 5px #DE6449;
 }
 
 
@@ -79,8 +84,6 @@ footer {
 .contact {
     float:left;
     font-size: 35px;
-    color: black;
-    font-family: 'Roboto', sans-serif;
     background-color: #CFD2CD;
     margin: 20px 25px 0px 25px;
     border-radius: 15px;
@@ -89,6 +92,9 @@ footer {
 }
 .contact h2 {
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color:#de6449;
+    text-shadow: 5px 5px 5px #2c4251;
     
 }
 .contact-info{
@@ -107,8 +113,9 @@ footer {
     text-decoration: none;
     font-size: 28px;
     font-family: 'Roboto', sans-serif;
-    color: #DE6449;
-} 
+    color: #e5e6e4;
+    text-shadow: 3px 3px 3px #DE6449;
+}   
 
 /*main style*/
 
@@ -122,32 +129,72 @@ footer {
         
 
 }
+
 .side-bar {
     display: inline-block;
-    margin: 65px 25px 35px 35px;
-    border-bottom: #E5E6E4;
-    border-left: #E5E6E4;
-    border-top: #E5E6E4;
-    border-right: #2c4251;
-    border-style: solid;
+    margin: 65px 25px 65px 35px;
+    border-right: 3px solid #2c4251;
     padding: 25px 25px 25px 25px;
 }
+
 .about-me h2 {
-    font-size: 35px;
+    font-size: 45px;
     color: black;
     font-family: 'Roboto', sans-serif; 
 }
+
 .text {
     width: 65%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    border-right: #E5E6E4;
 
 }
+
 .text article {
-    width: 800px;
     font-size: 20px;
     color: black;
     font-family:'Lato', sans-serif; ;
+}
+/* work style*/
+
+.work {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.side-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.side-bar h2 {
+    font-size: 45px;
+    color: black;
+    font-family: 'Roboto', sans-serif; 
+        
+}
+
+.pictures {
+    width: 63%;
+    margin-bottom: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.horesion {
+    margin: 100px 20px 20px 25px;
+    
+}
+
+.project-3, .project-2{
+    width: 300px;
+    height: 150px;
+    margin: 35px 35px 35px 35px;
 }
