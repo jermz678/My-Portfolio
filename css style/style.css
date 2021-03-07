@@ -12,12 +12,11 @@ body {
 /*header style*/
 
 header {
-    width: 100%;
+    width: 100vw;
     height: 80px;
     background-color: #2C4251;
     display: flex;
     flex-wrap: wrap;
-    
     justify-content: space-between;
     position: sticky;
     top: 0;
@@ -36,17 +35,11 @@ header {
     height: 80px;
 }
 
-.name div h1 {
+.name h1 {
     color:#e5e6e4;
     text-shadow: 5px 5px 5px #de6449;
     font-size: 45px;
     font-family: 'Roboto', sans-serif;
-}
-.profile {
-    width: 100px;
-    height: 80px;
-    display: inline;
-    float: left;
 }
 
 .navigation {
@@ -76,7 +69,7 @@ ul a {
 /*footer style*/
 
 footer {
-    width: 100%;
+    width: 100vw;
     height: 80px;
     background-color: #2C4251; 
     display: flex;
@@ -119,17 +112,27 @@ footer {
 
 /*hero style*/
 .hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     position: relative;
     background-size: cover;
     
 }
 .hero h2 {
     position: absolute;
-    bottom: 15px;
-    right: 10px;
+    bottom: 25px;
+    right: 100px;
     font-size: 35px;
     color:#cfd2cd;
     text-shadow: 3px 3px 3px #2c4251;
+}
+.profile-img {
+    position: absolute;
+    width: auto;
+    height: 180px;
+    margin-left: 140px;
+    
 }
 
 
@@ -137,20 +140,22 @@ footer {
 about me style*/
 
 .about-me {
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
-        
-
+    justify-content: space-around;
 }
 
-.side-bar {
-    display: inline-block;
-    margin: 65px 25px 65px 35px;
-    border-right: 3px solid #2c4251;
+.side-bar1 {
+    margin: 65px 25px 65px 0px;
     padding: 25px 25px 25px 25px;
+    border-right: 3px solid #2c4251;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+    margin-left: 115px;
 }
 
 .about-me h2 {
@@ -176,20 +181,27 @@ about me style*/
 /* work style*/
 
 .work {
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    
 }
 
-.side-bar {
+.side-bar2 {
+    margin: 65px 25px 65px 0px;
+    padding: 25px 32px 25px 25px;
+    border-right: 3px solid #2c4251;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    text-align: left;
+    margin-left: 115px;
+    
 }
 
-.side-bar h2 {
+.side-bar2 h2 {
     font-size: 45px;
     color: black;
     font-family: 'Roboto', sans-serif; 
@@ -202,7 +214,7 @@ about me style*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .horesion {
