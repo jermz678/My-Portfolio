@@ -14,7 +14,7 @@ body {
 /*header style*/
 
 header {
-    width: 100%;
+    width: 100vw;
     height: 80px;
     background-color: #2C4251;
     display: flex;
@@ -64,47 +64,45 @@ footer {
     background-color: #2C4251; 
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 .contact {
-    float:left;
-    margin: 10px 25px 0px 25px;
-    width: 30%;
-
-}
-.contact h2 {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    color:#e5e6e4;
-    text-shadow: 5px 5px 5px #de6449;
-    font-size: 45px;
-    
-}
-.contact-info{
-    float:right;
-    height: 80px;
-    width: 60%;
-}
-.info {
-    height: 80px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-evenly;
+    color:#e5e6e4;
+    text-shadow: 5px 5px 5px #de6449;
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+}
+    
+
+.contact-info{
+    display: flex;
+    align-items: center;
+}
+.info {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
     
 }
 .info a {
+    padding-right: 100px;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 30px;
     font-family: 'Roboto', sans-serif;
     color: #e5e6e4;
-    text-shadow: 3px 3px 3px #DE6449;
-} 
+    text-shadow: 5px 5px 5px #DE6449;
+}
+
 
 /*hero style*/
 
 .hero {
     background-image: url("../images/hero img.png");
-    width: 100%;
+    width: 100vw;
     height: 250px;
     position: relative;
 }
@@ -141,14 +139,13 @@ about me style*/
 }
 
 .side-bar1 {
-    margin: 65px 25px 65px 0px;
+    margin: 65px 0px 65px 0px;
     padding: 25px 25px 25px 25px;
     border-right: 3px solid #2c4251;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    text-align: left;
-    margin-left: 115px;
+    
+    
 }
 
 .side-bar1 h2 {
@@ -161,7 +158,6 @@ about me style*/
     width: 65%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     align-items: center;
     font-size: 20px;
     color: black;
@@ -172,52 +168,52 @@ about me style*/
 /* work style*/
 
 .work {
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-around;
+    
     
 }
 
 .side-bar2 {
     margin: 65px 25px 65px 0px;
-    padding: 25px 45px 25px 25px;
+    padding: 25px 25px 25px 25px;
     border-right: 3px solid #2c4251;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    text-align: left;
-    margin-left: 115px;
+    
     
 }
 
 .side-bar2 h2 {
     font-size: 45px;
     color: black;
-    font-family: 'Roboto', sans-serif; 
-        
+    font-family: 'Roboto', sans-serif;         
 }
 
 .pictures {
-    width: 65%;
     margin-bottom: 65px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    
 }
 
 .horesion {
     margin: 100px 120px 20px 25px;
     filter: brightness(50%);
     max-width: 100%;
+    height: auto;
 }
 
 .horesion:hover {
     filter: brightness(100%);
 }
-
+.small-pic {
+    display:flex;
+    flex-wrap: wrap;
+}
 .project-3, .project-2{
     width: 300px;
     height: 150px;
@@ -240,7 +236,13 @@ about me style*/
         align-items: center;
         padding-bottom: 25px;
     }
-    .name {
+    footer {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 25px;
+    }
+    .name, .contact {
         margin: 0;
         padding-bottom: 15px;
     }
@@ -255,39 +257,55 @@ about me style*/
     ul a {
         padding-right: 0;
     }
+    .info {
+        width: 100vw;
+        justify-content: space-around;
+    }
+    .info a{
+        padding-right: 0px;
+    }
 }
 @media screen and (max-width: 1105px){
-    .about-me {
+    .about-me, .work{
         flex-direction: column;
     }
-    .about-me h2 {
+    .about-me h2, .work h2 {
         margin: 0px auto;
         text-align: center;
         border-bottom: 3px solid #2c4251;
     }
-    .side-bar1 {
+    .side-bar1, .side-bar2 {
         border-right: 0;
         margin: 0;
-        padding: 20px 0px;
+        padding: 10px 0px;
     }
     .text {
         margin: 0 auto;
-        padding: 20px 0px;
+        padding: 30px 0px;
     }
-
-
-
-
-
+    .pictures, .horesion {
+        width: auto;
+        margin: 20px auto;
+        
+    }
+    .small-pic {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 25px;
+        
+    }
+    .small-pic img {
+        margin: 0px;
+    }
 }
 @media screen and (max-width: 950px) {
-    .name {
+    .name, .contact{
         font-size: 36px;
     }
-    .navigation ul {
+    .navigation ul, .info {
         flex-direction: column;
     }
-    ul a {
+    ul a, .info a {
         font-size: 20px;
     }
     ul li {
@@ -311,11 +329,19 @@ about me style*/
     .text {
         font-size: 16px;
     }
+    .side-bar2 h2 {
+        font-size: 32px;
+    }
 
 }
 @media screen and (max-width: 600px){
-        
-        
+    .pictures {
+        max-width: 80%;
+    }
+     
+    .project-2, .project-3 {
+        padding-bottom: 20px;
+    }
         
 
 
