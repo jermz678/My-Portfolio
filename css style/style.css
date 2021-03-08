@@ -6,63 +6,48 @@
 /*body style*/
 
 body {
+    width: 100%;
     background-color: #E5E6E4;
+    position: absolute;
 }
 
 /*header style*/
 
 header {
-    width: 100vw;
+    width: 100%;
     height: 80px;
     background-color: #2C4251;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     position: sticky;
     top: 0;
     z-index: 9999;
 }
 
 .name {
-    text-align: center;
-    margin-left: 40px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    
-    width: 600px;
-    height: 80px;
-}
-
-.name h1 {
     color:#e5e6e4;
     text-shadow: 5px 5px 5px #de6449;
     font-size: 45px;
     font-family: 'Roboto', sans-serif;
 }
-.navigation {
-    height: 80px;
-    width: 800px;
+.navigation{
     display: flex;
-    flex-wrap: wrap;
-    padding-right: 100px;
-    
+    align-items: center;
 }
-nav {
-    width: 800px;
-}
-
-ul{
+.navigation ul{
     list-style-type: none;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 80px;
+    align-items: center; 
     justify-content: space-between;
 }
 
 ul a {
+    padding-right: 100px;
     text-decoration: none;
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
@@ -117,18 +102,22 @@ footer {
 
 /*hero style*/
 .hero-outer {
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
 
 }
 .hero {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     position: relative;
     
     
+}
+.hero-img {
+    max-width: 100%;
 }
 .hero h2 {
     position: absolute;
@@ -139,10 +128,12 @@ footer {
     text-shadow: 3px 3px 3px #2c4251;
 }
 .profile-img {
+    
+    max-width: 100%;
     position: absolute;
     width: auto;
-    height: 180px;
-    margin-left: 140px;
+    max-height: 180px;
+    margin-left: 180px;
     border-radius: 15%;
     box-shadow: 5px 5px 5px black;
     
@@ -194,7 +185,7 @@ about me style*/
 /* work style*/
 
 .work {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -255,126 +246,41 @@ about me style*/
 
 /*media queries*/
 
-/*980px screen*/
-@media screen and (max-width:980px){
-    
+@media screen and (max-width: 1500px) {
     header {
-        width: 100vw;
-        height: 80px;
-        position: relative;
-        
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 25px;
     }
     .name {
-        width: 100%;
-        justify-content: center;
-        padding-bottom: 0px;
-        position: absolute;
-        padding-bottom: 30px;
-    }
-    .name h1 {
-        font-size: 35px;
-        justify-content: center;    
-    }
-    .navigation{
-        width: 100%;
-        justify-content: center;
-        padding-right: 0px;
-        padding-top: 20px;
-    }
-    .hero-outer {
-        width: 100vw;
-    }
-    .side-bar1 {
-        justify-content: center;
-        border-bottom: 3px solid #2c4251;
-        border-right: 0px;
-        margin: 0px;
-        margin-bottom: 25px;
-    }
-    .text{
-        width: 100%;
-        justify-content: center;
-        margin: 0px 25px;
-    }
-    .side-bar2 {
-        justify-content: center;
-        border-bottom: 3px solid #2c4251;
-        border-right: 0px;
-        margin: 0px;
-        margin-bottom: 15px;
-    }
-    .pictures {
-        width: 100%;
-        justify-content: center;
-        margin:0px;
-        margin-left: 50px;
-        
-    }
-    .horesion {
-        width: 90%;
-        margin-top: 25px;
-        
-    } 
-    .project-2, .project-3 {
-        justify-content: center;
-        
-    }
-
-}
-/*768px screen */
-
-@media screen and (max-width:768px) {
-    
-    header {
-        width: 100vw;
-        justify-content: center;
-        height: 80px;
-        position: relative;
-    }
-    .name h1 {
-        padding-top: 20px;
-        position: absolute;
-        padding-bottom: 20px;
+        margin: 0;
+        padding-bottom: 15px;
     }
     .navigation {
-        position: absolute;
-        padding-top:25px;
+        width: 100vw;
+        padding-right: 0;
     }
-    .navigation nav ul {
-        justify-content: center;
-        justify-content: space-evenly;
+    .navigation ul {
+        width: 100vw;
+        justify-content: space-around;
     }
-    .text {
-        width: 80%;
-        justify-content: center;
-    }
-    .side-bar1 {
-        width: 100vm;
-        justify-content: center;
-    }
-    .side-bar2 {
-        width: 100vm;
-        justify-content: center;
-    }
-    .pictures {
-        width: 80%;
-        justify-content: center;
-    }
-    .project-2, .project-3 {
-        justify-content: center;
-    }
-    .contact-me {
-        width: 100%;
-        align-items: center;
-    }
-    .contact {
-        justify-content: center;
-        margin: 0;
-    }
-    .contact h2 {
-        font-size: 35px;  
-        align-items: center;  
-        
+    ul a {
+        padding-right: 0;
     }
 }
-/*575px screen */
+@media screen and (max-width: 950px) {
+    .name {
+        font-size: 36px;
+    }
+    .navigation ul {
+        flex-direction: column;
+    }
+    ul a {
+        font-size: 20px;
+    }
+    ul li {
+        margin-bottom: 10px;
+    }
+
+}
