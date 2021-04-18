@@ -157,30 +157,21 @@ about me style*/
     display: flex;
     flex-direction: column;
 }
-.horesion {
+.project-1{
+
     margin: 100px 120px 20px 25px;
     filter: brightness(50%);
     max-width: 100%;
-    height: auto;
-}
-.horesion:hover {
-    filter: brightness(100%);
-}
-.small-pic {
-    display:flex;
-    flex-wrap: wrap;
-}
-.project-3, .project-2{
-    width: 300px;
-    height: 150px;
-    margin: 35px 115px 35px 35px;
+
+} 
+.project-2 {
+    margin: 100px 120px 20px 25px;
     filter: brightness(50%);
+    max-width: 400px;
+    
 }
-.project-2:hover {
-    filter: brightness(100%)
-}
-.project-3:hover {
-    filter: brightness(100%)
+.project-1:hover {
+    filter: brightness(100%);
 }
 
 /*media queries*/
